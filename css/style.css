@@ -429,17 +429,7 @@ body{
   font-size: 35px;
  
 }
-.placa div:hover,:focus{
-  height: 60px;
-  width: 60px;
- 
-  text-shadow: 0 0 5px #8BE8E5;
-  box-shadow: 0 0 5px #8BE8E5,
-  0 0 20px #8BE8E5,
-  0 0 50px #8BE8E5;
-  background-color: #8BE8E5;
-  
-}
+
 
 
 @media(max-width:1050px){
@@ -544,8 +534,5 @@ body{
   font-size: 20px;
  
 }
-.placa div:hover,:focus{
-  height: 40px;
-  width: 40px;
-}
+
 }
