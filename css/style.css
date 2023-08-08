@@ -1,0 +1,551 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+
+ 
+
+body{
+  
+    background-image: url(cyberpunk.gif);
+    background-size: cover;
+
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+    
+}
+
+.clock{
+    margin-right: 60%;
+    font-family: 'Poppins', sans-serif;
+    width: 360px;
+    height: 360px;
+    background-color: rgb(255, 255, 255,0.8);
+    border-radius: 50%;    
+    position: relative;   
+    backdrop-filter: blur(10px);
+    background: #ffffff10;
+    border: 1px solid #ffffff30;
+    box-shadow: 0px 8px 10px rgb(0,0,0,.5);
+    transition: 0.3s ease;
+}
+.clock:hover,:focus{
+  width: 390px;
+    height: 390px;
+}
+
+.clock .numero.numero{
+    --rotation:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 1.0rem;
+    padding: 0.5rem;
+    font-weight: 500;
+    color: #D5F5E3;
+   
+}
+.clock .numero.numero-1{
+    --rotation:30deg;
+}
+.clock .numero.numero-2{
+    --rotation:60deg;
+}
+.clock .numero.numero-3{
+    --rotation:90deg;
+}
+.clock .numero.numero-4{
+    --rotation:120deg;
+}
+.clock .numero.numero-5{
+    --rotation:150deg;
+}
+.clock .numero.numero-6{
+    --rotation:180deg;
+}
+.clock .numero.numero-7{
+    --rotation:210deg;
+}
+.clock .numero.numero-8{
+    --rotation:240deg;
+}
+.clock .numero.numero-9{
+    --rotation:270deg;
+}
+.clock .numero.numero-10{
+    --rotation:300deg;
+}
+.clock .numero.numero-11{
+    --rotation:330deg;
+}
+.clock .numero.numero-12{
+    --rotation:360deg;
+}
+
+.clock .minuto.minuto{
+    --rotation:0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 0.4rem;
+    font-weight: 500;
+    color: #D5F5E3;
+   
+   
+}
+
+.clock .minuto.minuto-1 {
+    --rotation: 6deg;
+  }
+  .clock .minuto.minuto-2 {
+    --rotation: 12deg;
+  }
+  .clock .minuto.minuto-3 {
+    --rotation: 18deg;
+  }
+  .clock .minuto.minuto-4 {
+    --rotation: 24deg;
+  }
+  .clock .minuto.minuto-5 {
+    --rotation: 30deg;
+  }
+  .clock .minuto.minuto-6 {
+    --rotation: 36deg;
+  }
+  .clock .minuto.minuto-7 {
+    --rotation: 42deg;
+  }
+  .clock .minuto.minuto-8 {
+    --rotation: 48deg;
+  }
+  .clock .minuto.minuto-9 {
+    --rotation: 54deg;
+  }
+  .clock .minuto.minuto-10 {
+    --rotation: 60deg;
+  }
+  .clock .minuto.minuto-11 {
+    --rotation: 66deg;
+  }
+  .clock .minuto.minuto-12 {
+    --rotation: 72deg;
+  }
+  .clock .minuto.minuto-13 {
+    --rotation: 78deg;
+  }
+  .clock .minuto.minuto-14 {
+    --rotation: 84deg;
+  }
+  .clock .minuto.minuto-15 {
+    --rotation: 90deg;
+    font-size: 0.5rem;
+  }
+  .clock .minuto.minuto-16 {
+    --rotation: 96deg;
+  }
+  .clock .minuto.minuto-17 {
+    --rotation: 102deg;
+  }
+  .clock .minuto.minuto-18 {
+    --rotation: 108deg;
+  }
+  .clock .minuto.minuto-19 {
+    --rotation: 114deg;
+  }
+  .clock .minuto.minuto-20 {
+    --rotation: 120deg;
+    
+  }
+  .clock .minuto.minuto-21 {
+    --rotation: 126deg;
+  }
+  .clock .minuto.minuto-22 {
+    --rotation: 132deg;
+  }
+  .clock .minuto.minuto-23 {
+    --rotation: 138deg;
+  }
+  .clock .minuto.minuto-24 {
+    --rotation: 144deg;
+  }
+  .clock .minuto.minuto-25 {
+    --rotation: 150deg;
+  }
+  .clock .minuto.minuto-26 {
+    --rotation: 156deg;
+  }
+  .clock .minuto.minuto-27 {
+    --rotation: 162deg;
+  }
+  .clock .minuto.minuto-28 {
+    --rotation: 168deg;
+  }
+  .clock .minuto.minuto-29 {
+    --rotation: 174deg;
+  }
+  .clock .minuto.minuto-30 {
+    --rotation: 180deg;
+    font-size: 0.5rem;
+  }
+  .clock .minuto.minuto-31 {
+    --rotation: 186deg;
+  }
+  .clock .minuto.minuto-32 {
+    --rotation: 192deg;
+  }
+  .clock .minuto.minuto-33 {
+    --rotation: 198deg;
+  }
+  .clock .minuto.minuto-34 {
+    --rotation: 204deg;
+  }
+  .clock .minuto.minuto-35 {
+    --rotation: 210deg;
+  }
+  .clock .minuto.minuto-36 {
+    --rotation: 216deg;
+  }
+  .clock .minuto.minuto-37 {
+    --rotation: 222deg;
+  }
+  .clock .minuto.minuto-38 {
+    --rotation: 228deg;
+  }
+  .clock .minuto.minuto-39 {
+    --rotation: 234deg;
+  }
+  .clock .minuto.minuto-40 {
+    --rotation: 240deg;
+  }
+  .clock .minuto.minuto-41 {
+    --rotation: 246deg;
+  }
+  .clock .minuto.minuto-42 {
+    --rotation: 252deg;
+  }
+  .clock .minuto.minuto-43 {
+    --rotation: 258deg;
+  }
+  .clock .minuto.minuto-44 {
+    --rotation: 264deg;
+  }
+  .clock .minuto.minuto-45 {
+    --rotation: 270deg;
+    font-size: 0.5rem;
+  }
+  .clock .minuto.minuto-46 {
+    --rotation: 276deg;
+  }
+  .clock .minuto.minuto-47 {
+    --rotation: 282deg;
+  }
+  .clock .minuto.minuto-48 {
+    --rotation: 288deg;
+  }
+  .clock .minuto.minuto-49 {
+    --rotation: 294deg;
+  }
+  .clock .minuto.minuto-50 {
+    --rotation: 300deg;
+  }
+  .clock .minuto.minuto-51 {
+    --rotation: 306deg;
+  }
+  .clock .minuto.minuto-52 {
+    --rotation: 312deg;
+  }
+  .clock .minuto.minuto-53 {
+    --rotation: 318deg;
+  }
+  .clock .minuto.minuto-54 {
+    --rotation: 324deg;
+  }
+  .clock .minuto.minuto-55 {
+    --rotation: 330deg;
+  }
+  .clock .minuto.minuto-56 {
+    --rotation: 336deg;
+  }
+  .clock .minuto.minuto-57 {
+    --rotation: 342deg;
+  }
+  .clock .minuto.minuto-58 {
+    --rotation: 348deg;
+  }
+  .clock .minuto.minuto-59 {
+    --rotation: 354deg;
+  }
+  .clock .minuto.minuto-60{
+    --rotation:360deg;
+    font-size: 0.5rem;
+}
+
+/*Ponteiros*/
+.clock::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+    background-color: #17202A ;
+    transform: translate(-50%, -50%);
+}
+.clock .ponteiro{
+    --rotation:0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+   
+    background-color: #17202A ;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation)* 1deg));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+}
+
+.clock .ponteiro.segundos {
+    width: 3px;
+    height: 40%;
+    background-color: #A93226;
+}
+.clock .ponteiro.minutos{
+    width: 5px;
+    height: 35%;
+    background-color: #17202A ;
+}
+.clock .ponteiro.horas{
+    width: 8px;
+    height: 25%;
+    background-color: #17202A ;
+}
+
+/*Relógio digital*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+.relogio{
+  margin-left: 60%;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+  width: 500px;
+  backdrop-filter: blur(10px);
+  background: #ffffff10;
+  border-radius: 3px;
+  box-shadow: 0px 8px 10px rgb(0,0,0,.5);
+  border-radius: 5px;
+  
+}
+
+.relogio div{
+  height: 170px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  color: #D5F5E3 ;
+  background: rgba(5, 5,5, .7);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+  border-radius:10px;
+  letter-spacing: 3px;
+  transition:   0.3s ;
+  user-select: none;
+}
+.relogio div:hover,:focus{
+  height: 180px;
+  width: 155px;
+  background: transparent;
+
+}
+
+
+
+.relogio span{
+  font-weight: bolder;
+  font-size: 75px;
+ 
+}
+.relogio .time{
+  font-size: 15px;
+  
+}
+
+
+.placa{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 30%;
+  position: absolute;
+  width: 475px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(5, 5,5, .7);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .9);
+  backdrop-filter: blur(10px);
+    background: #ffffff10;
+    text-shadow: none;
+    transition: 0.5s ease;
+    user-select: none;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    
+}
+.placa div{
+  
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: #0B666A;
+  background: rgba(5, 5,5, .5);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+  border-radius: 50px;
+ 
+  transition:   0.3s ;
+  user-select: none;
+  font-size: 35px;
+ 
+}
+.placa div:hover,:focus{
+  height: 60px;
+  width: 60px;
+ 
+  text-shadow: 0 0 5px #8BE8E5;
+  box-shadow: 0 0 5px #8BE8E5,
+  0 0 20px #8BE8E5,
+  0 0 50px #8BE8E5;
+  background-color: #8BE8E5;
+  
+}
+
+
+@media(max-width:1050px){
+  .clock{
+    margin-right: 0;    
+    width:200px;
+    height: 200px;
+
+}
+ .clock:hover,:focus{
+  width: 220px;
+    height: 220px;
+}
+
+.relogio{
+  margin-left: 0;
+  margin-top: 50%;
+  height: 150px;
+  width: 400px;
+
+  
+}
+
+.relogio div{
+  height: 120px;
+  width: 100px;
+
+}
+.relogio div:hover,:focus{
+  height: 110px;
+  width: 90px;
+
+}
+.relogio span{
+  font-size: 30px;
+  margin-top: 1rem;
+}
+.relogio .time{
+  font-size: 12px;
+}
+body{
+  flex-direction: column;
+}
+.placa{
+  margin-bottom: 60%;
+
+}
+}
+@media(max-width:600px){
+  .clock{
+    margin-right: 0;    
+    width:150px;
+    height: 150px;
+    margin-bottom: 30%;
+
+}
+ .clock:hover,:focus{
+    width: 155px;
+    height: 155px;
+}
+
+.relogio{
+  margin-left: 0;
+  margin-top: 70%;
+  height: 130px;
+  width: 300px;
+
+  
+}
+
+.relogio div{
+  height: 100px;
+  width: 80px;
+
+
+}
+.relogio div:hover,:focus{
+  height: 110px;
+  width: 90px;
+
+}
+.relogio span{
+  font-size: 20px;
+  margin-top: 1.5rem;
+}
+.relogio .time{
+  font-size: 9px;
+}
+
+.placa{
+  margin-bottom: 100%;
+
+}
+.placa{
+  width: 300px;
+  height: 50px; 
+}
+.placa div{
+  
+  height: 30px;
+  width:30px;
+  font-size: 20px;
+ 
+}
+.placa div:hover,:focus{
+  height: 40px;
+  width: 40px;
+}
+}
